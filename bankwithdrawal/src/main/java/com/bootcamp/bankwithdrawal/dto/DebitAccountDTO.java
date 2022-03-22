@@ -1,5 +1,6 @@
 package com.bootcamp.bankwithdrawal.dto;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -11,22 +12,23 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class WithdrawalDto {
+public class DebitAccountDTO {
 
   private String id;
 
-  private String balance;
+  private double amount;
 
-  private String currency;
+  private String clientIdNumber;
 
-  private String idClient;
+  private String typeOfAccount;
 
-  private String withdrawalNumber;
+  private String accountNumber;
 
-  private String typeSavingAcc;
+  private int maxLimitMovementPerMonth;
 
-  private String typeCurrentAcc;
+  private int movementPerMonth;
 
-  private String typeTermAcc;
+  private double commission;
 
 }
+

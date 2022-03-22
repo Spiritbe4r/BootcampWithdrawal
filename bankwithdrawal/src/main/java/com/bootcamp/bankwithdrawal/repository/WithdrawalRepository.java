@@ -10,6 +10,5 @@ import reactor.core.publisher.Mono;
 public interface WithdrawalRepository extends ReactiveMongoRepository<Withdrawal, String> {
 
 
-    /*Mono<WithdrawalDto> findByName(String name);*/
-    Mono<WithdrawalDto> findByWithdrawalNumber(String withdrawalNumber);
+
 }
